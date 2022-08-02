@@ -15,6 +15,8 @@
 
 ### License
 
+[MIT © iceduu](https://github.com/iceduu/xmu-beamer/blob/main/LICENSE)
+
 ------
 
 **厦门大学非官方Latex-Beamer模板** [点此预览](iceduu.github.io)
@@ -30,7 +32,7 @@
 - 一丢丢的编程能力
 - 一丢丢的LaTeX基础
 
+### 开源许可证
 
-
-### 开源许可
+[MIT © iceduu](https://github.com/iceduu/xmu-beamer/blob/main/LICENSE)
 
