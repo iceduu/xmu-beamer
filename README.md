@@ -2,7 +2,7 @@
 
 **Xiamen University unofficial Latex-Beamer template**
 
-Note: This template needs to be compiled using xelatex
+Note: This template needs to be compiled using XeLaTex
 
 ### Preview
 
@@ -33,7 +33,7 @@ This work has been uploaded to overleaf, [click here to view](https://www.overle
 
 **厦门大学非官方Latex-Beamer模板**
 
-注：本模板需要使用xelatex进行编译
+注：本模板需要使用XeLaTex进行编译
 
 ### 预览
 
