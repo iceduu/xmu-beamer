@@ -1,6 +1,14 @@
 # xmu-beamer
 
-**Xiamen University unofficial Latex-Beamer template** [click here to preview](iceduu.github.io)
+**Xiamen University unofficial Latex-Beamer template**
+
+Note: This template needs to be compiled using xelatex
+
+### Preview
+
+XMU blue accent color [click here to preview](https://github.com/iceduu/xmu-beamer/blob/main/slides_blue.pdf)
+
+Jiageng red accent color [click here to preview](https://github.com/iceduu/xmu-beamer/blob/main/slides_red.pdf)
 
 ### This template is suitable for:
 
@@ -13,13 +21,25 @@
 - A little bit of programming skills
 - A little bit of LaTeX experience
 
+### Overleaf
+
+This work has been uploaded to overleaf, [click here to view](https://www.overleaf.com/latex/templates/xmu-beamer-template/zzrksvwjnkzn)
+
 ### License
 
 [MIT © iceduu](https://github.com/iceduu/xmu-beamer/blob/main/LICENSE)
 
 ------
 
-**厦门大学非官方Latex-Beamer模板** [点此预览](iceduu.github.io)
+**厦门大学非官方Latex-Beamer模板**
+
+注：本模板需要使用xelatex进行编译
+
+### 预览
+
+厦大蓝主题色 [点此预览](https://github.com/iceduu/xmu-beamer/blob/main/slides_blue.pdf)
+
+嘉庚红主题色 [点此预览](https://github.com/iceduu/xmu-beamer/blob/main/slides_red.pdf)
 
 ### 本模板适合
 
@@ -31,6 +51,10 @@
 
 - 一丢丢的编程能力
 - 一丢丢的LaTeX基础
+
+### Overleaf
+
+本作品已上传至overleaf，[点击查看](https://www.overleaf.com/latex/templates/xmu-beamer-template/zzrksvwjnkzn)
 
 ### 开源许可证
 
