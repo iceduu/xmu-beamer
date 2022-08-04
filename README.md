@@ -1,7 +1,7 @@
 # xmu-beamer
 
-![platform](https://img.shields.io/static/v1?label=software&message=Latex&color=red)
-![platform](https://img.shields.io/static/v1?label=compiler&message=XeLaTex&color=blue)
+![code](https://img.shields.io/static/v1?label=code&message=Tex&color=red)
+![compiler](https://img.shields.io/static/v1?label=compiler&message=XeLaTex&color=blue)
 ![platform](https://img.shields.io/static/v1?label=platform&message=macos|windows&color=inactive)
 [![GitHub - LICENSE](https://img.shields.io/github/license/mashape/apistatus)](./LICENSE)
 
