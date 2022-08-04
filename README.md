@@ -1,9 +1,9 @@
 # xmu-beamer
 
 ![platform](https://img.shields.io/static/v1?label=software&message=Latex&color=brightgreen)
-![platform](https://img.shields.io/static/v1?label=compiler&message=XeLaTex&color=brightgreen)
-![platform](https://img.shields.io/static/v1?label=platform&message=macos | windows&color=brightgreen)
-[![GitHub - LICENSE](https://img.shields.io/github/license/mashape/apistatus)](./LICENSE)
+![platform](https://img.shields.io/static/v1?label=compiler&message=XeLaTex&color=green)
+![platform](https://img.shields.io/static/v1?label=platform&message=macos|windows&color=orange)
+[![GitHub - LICENSE](https://img.shields.io/github/license/mashape/apistatus&color=red)](./LICENSE)
 
 **Xiamen University unofficial Latex-Beamer template**
 
