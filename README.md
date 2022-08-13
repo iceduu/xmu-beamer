@@ -17,7 +17,7 @@ Jiageng red accent color [click here to preview](https://github.com/iceduu/xmu-b
 
 ### This template is suitable for:
 
-- Undergraduate, postgraduate and doctoral thesis/dissertation defense
+- Undergraduate, postgraduate and doctoral thesis defense
 - Various academic reports and international conferences
 - Club activities and class activities
 
