@@ -1,67 +1,53 @@
 \mode<presentation>
 
-\newif\ifbeamer@secheader
-\beamer@secheaderfalse
-
 %\DeclareOptionBeamer{secheader}{\beamer@secheadertrue}
 \ProcessOptionsBeamer
+
+\xdefinecolor{xmu}{RGB}{30 , 55 , 113} % 默认厦大蓝，无背景
+\DeclareOption{blue}{\xdefinecolor{xmu}{RGB}{30 , 55 , 113}
+\setbeamertemplate{background}{
+    \includegraphics[width=1\paperwidth,height=\paperheight]{pic/xmu_bg_blue.pdf}
+}} %选项为厦大蓝
+\DeclareOption{red}{\xdefinecolor{xmu}{RGB}{199 , 78 , 54}
+\setbeamertemplate{background}{
+    \includegraphics[width=1\paperwidth,height=\paperheight]{pic/xmu_bg_red.pdf}
+}} %选项为嘉庚红
+\ProcessOptions\relax
+\xdefinecolor{xmu@orange}{RGB}{240,140,0}
 
 \useoutertheme[footline=authorinstitutetitle,subsection=false]{smoothbars}
 \makeatletter % [add curpage/total page at the bottom](http://tex.stackexchange.com/questions/100838/beamer-dresden-theme-miniframes-appeareance-and-frame-number-insertion)
 \newcommand{\frameofframes}{/}
 \newcommand{\setframeofframes}[1]{\renewcommand{\frameofframes}{#1}}
-%\setbeamertemplate{footline} 
-%  {%
-%    \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}\kaishu
-%    \end{beamercolorbox}
-%    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
-%      leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}%
-%      \leavevmode{\usebeamerfont{author in head/foot}\kaishu\insertshortauthor}%
-%      \hfill%
-%      {\usebeamerfont{institute in head/foot}\usebeamercolor[fg]{institute in head/foot}\kaishu\insertshortinstitute}%
-%    \end{beamercolorbox}%
-%    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
-%      leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
-%      {\usebeamerfont{title in head/foot}\kaishu\insertshorttitle}%
-%      \hfill%
-%      {\usebeamerfont{frame number}\usebeamercolor[fg]{frame number}\insertframenumber~\frameofframes~\inserttotalframenumber}
-%    \end{beamercolorbox}%
-%    \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
-%    \end{beamercolorbox}
-%  }
 % author | data | title | number
 \defbeamertemplate*{footline}{xmu_beamer}{%
 	\leavevmode%
 	\hbox{%
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.5ex,dp=1.125ex,center]{title in head/foot}%
-			\usebeamerfont{author in head/foot}\kaishu\insertshortauthor
+			\usebeamerfont{author in head/foot}\insertshortauthor
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.5ex,dp=1.125ex,center]{title in head/foot}%
-			\usebeamerfont{author in head/foot}\kaishu\insertshortdate
+			\usebeamerfont{author in head/foot}\insertshortdate
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.435\paperwidth,ht=2.5ex,dp=1.125ex,center]{author in head/foot}%
-			\usebeamerfont{title in head/foot}\kaishu\insertshorttitle
+			\usebeamerfont{title in head/foot}\insertshorttitle
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=0.065\paperwidth,ht=2.5ex,dp=1.125ex,right]{author in head/foot}%
-			\kaishu\insertframenumber{} / \kaishu\inserttotalframenumber\hspace*{1ex}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
 	\end{beamercolorbox}}%
 	\vskip0pt%
 }
 \makeatother
 
 \useinnertheme{circles}
+\usefonttheme{professionalfonts}
 
 %\useoutertheme{default}
 %\useinnertheme[shadow=true]{rounded}
 
-\xdefinecolor{xmu}{RGB}{30 , 55 , 113}  %厦门大学标准色转化为RGB
-\xdefinecolor{xmu@orange}{RGB}{240,140,0}
-
 \setbeamercolor{footline}{bg=xmu}
 \setbeamercolor{frametitle}{bg=xmu,fg=white}
 \setbeamercolor{title}{bg=xmu}
-\setbeamerfont{frametitle}{family=\kaishu, size=\large}
-\setbeamerfont{title}{family=\kaishu}
 %\setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{bibliography item}[text]
 \setbeamertemplate{caption}[numbered]
@@ -77,7 +63,6 @@
 % setting the color of block, example and alerted
 \setbeamercolor{block title}{bg=xmu,fg=white}
 \setbeamercolor{block title alerted}{use = alerted text, fg = white, bg = xmu@orange}
-\setbeamerfont{block title}{family=\kaishu}
 \setbeamercolor{block title example}{use={normal text,example text},bg=white,fg=xmu}
 \setbeamercolor{fine separation line}{}
 \setbeamercolor{item projected}{fg=white}
@@ -88,18 +73,13 @@
 %\setbeamercolor{palette sidebar quaternary}{fg=white}
 \setbeamercolor{section in sidebar}{fg=brown}
 \setbeamercolor{section in sidebar shaded}{fg=grey}
-\setbeamerfont{section in sidebar shaded}{family=\kaishu}
 
 \setbeamercolor{separation line}{}
 \setbeamercolor{sidebar}{bg=xmu}
-\setbeamerfont{sidebar}{family=\kaishu}
 \setbeamercolor{sidebar}{parent=palette primary}
 \setbeamercolor{structure}{fg=xmu}
 \setbeamercolor{subsection in sidebar}{fg=brown}
 \setbeamercolor{subsection in sidebar shaded}{fg=grey}
-% \setbeamerfont{subsection in sidebar shaded}{family=\kaishu}
-% \setbeamerfont{subsection in head/foot}{family=\kaishu}
-\setbeamerfont{headline}{family=\kaishu}
 \AtBeginSection[]{
 	\begin{frame}
 		\tableofcontents[sectionstyle=show/shaded,subsectionstyle=hide,subsubsectionstyle=hide]
@@ -110,8 +90,5 @@
 %		\tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
 %	\end{frame}
 %}
-\setbeamertemplate{background}{
-    \includegraphics[width=1\paperwidth,height=\paperheight]{pic/xmu_bg_blue.pdf}
-}
 \mode
 <all>

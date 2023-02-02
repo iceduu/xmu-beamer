@@ -1,4 +1,4 @@
-\documentclass[fontset=windows]{beamer}
+\documentclass{beamer}
 \usepackage{ctex, hyperref}
 \usepackage[T1]{fontenc}
 
@@ -8,40 +8,34 @@
 \usepackage{caption, subfigure}
 
 % xmu beamer
-\usepackage{XMUBeamerBlue}	%厦大蓝
-% \usepackage{XMUBeamerRed}	%嘉庚红
+\usepackage[blue]{XMUBeamer}	%厦大蓝
+% \usepackage{XMUBeamer}	%厦大蓝主题色，但无背景
+% \usepackage[red]{XMUBeamer}%嘉庚红
 
-\author{\href{https://iceduu.github.io}{iceduu}}
+\author[小张]{张三}
 \title{厦门大学非官方\textrm{Beamer}模板}
 \subtitle{\textrm{XMU unofficial Beamer template}}
-\institute{厦门大学数学科学学院}
+\institute{厦门大学XX学院}
 \date{\today}
 
 
 % defs6
 \def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
 \def\env#1{\texttt{\color{blue}\footnotesize #1}}
-\definecolor{deepblue}{rgb}{0,0,0.5}
-\definecolor{deepred}{rgb}{0.6,0,0}
-\definecolor{deepgreen}{rgb}{0,0.5,0}
-\definecolor{halfgray}{gray}{0.55}
 
 \lstset{
     basicstyle=\ttfamily\small,
-    keywordstyle=\bfseries\color{deepblue},
-    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
-    stringstyle=\color{deepgreen},
+    keywordstyle=\bfseries\color{red!0!green!0!blue!100},
+    emphstyle=\ttfamily\color{red!100!green!0!blue!0},    % Custom highlighting style
+    stringstyle=\color{red!0!green!100!blue!0},
     numbers=left,
-    numberstyle=\small\color{halfgray},
+    numberstyle=\small\color{gray!50},
     rulesepcolor=\color{red!20!green!20!blue!20},
-    frame=shadowbox,
+    frame=shadowbox
 }
 
 
 \begin{document}
-
-\kaishu
-% \setmainfont{Times New Roman}
 \begin{frame}
     \titlepage
     \begin{figure}[htpb]
@@ -102,22 +96,29 @@
 
 \section{改动说明}
 
-\begin{frame}{改动说明}
+%\begin{frame}{改动说明}
+%    \begin{itemize}
+%        \item 调整至厦门大学厦大蓝以及嘉庚红两种主题颜色
+%        \item 对alertblock的颜色进行了更改
+%        \item 对footline进行了调整
+%        \item 更多该模板的功能可以参考 \url{https://www.latexstudio.net/archives/4051.html}
+%        \item 下面列举出了一些Beamer的用法，部分节选自 \url{https://tuna.moe/event/2018/latex/}
+%    \end{itemize}
+%\end{frame}
+
+\begin{frame}{最新改动说明}
     \begin{itemize}
-        \item 调整至厦门大学厦大蓝以及嘉庚红两种主题颜色
-        \item 对alertblock的颜色进行了更改
-        \item 对footline进行了调整
-         \item 更多该模板的功能可以参考 \url{https://www.latexstudio.net/archives/4051.html}
-        \item 下面列举出了一些Beamer的用法，部分节选自 \url{https://tuna.moe/event/2018/latex/}
+        \item 主题颜色可以通过options选项进行控制
+        \item 字体调整为默认字体
     \end{itemize}
 \end{frame}
-
 \section{使用说明}
 \begin{frame}{主题色选择}
 	\begin{itemize}
 		\item 本模板共包含两个主题色，分别为厦大蓝和嘉庚红。
-		\item 厦大蓝请使用\textbackslash usepackage\{XMUBeamerBlue\}
-		\item 嘉庚红请使用\textbackslash usepackage\{XMUBeamerRed\}
+		\item 厦大蓝使用\textbackslash usepackage[blue]\{XMUBeamer\}
+		\item 嘉庚红使用\textbackslash usepackage[red]\{XMUBeamer\}
+		\item 厦大蓝主题色，无楼群背景使用\textbackslash usepackage\{XMUBeamer\}
 	\end{itemize}
 	
 	\begin{figure}[htbp]
